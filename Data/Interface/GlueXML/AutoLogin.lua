@@ -52,6 +52,28 @@ L["ruRU"] = {
   ["NoSuperWoW"] = "|cff77ff00Turtle AutoLogin|r требует SuperWoW 1.4 или новее для работы.",
 }
 
+L["zhCN"] = {
+  -- localize the Left value
+  class = {
+    ["德鲁伊"] = "Druid",
+    ["猎人"] = "Hunter",
+    ["法师"] = "Mage",
+    ["圣骑士"] = "Paladin",
+    ["牧师"] = "Priest",
+    ["盗贼"] = "Rogue",
+    ["萨满"] = "Shaman",
+    ["战士"] = "Warrior",
+    ["术士"] = "Warlock",
+  },
+  -- localize the Right value
+  ["SelectAccount"] = "选择账号",
+  ["RemoveAccount"] = "删除账号",
+  ["LockAccounts"] = "锁定账号",
+  ["StreamerMode"] = "隐私模式",
+  ["LockCharacters"] = "锁定角色",
+  ["NoSuperWoW"] = "|cff77ff00Turtle AutoLogin|r 需要 SuperWoW 1.4 或更高版本才能运行。",
+}
+
 L = L[GetLocale()] or L["enUS"]
 
 local has_superwow = (ImportFile and ExportFile) or (SUPERWOW_VERSION and tonumber(SUPERWOW_VERSION) >= 1.4)
@@ -921,4 +943,5 @@ CharacterSelect_EnterWorld = function (a1,a2,a3,a4,a5,a6,a7,a8,a9)
   LoginManager:EnterWorld()
 end
 --------
+
 
